@@ -13,15 +13,7 @@
   ],
   "license": "BSD-3-Clause",
   "author": "Jeffrey Heer (http://idl.cs.washington.edu)",
-  "main": "dist/arquero.node.js",
-  "module": "src/index-node.js",
-  "unpkg": "dist/arquero.min.js",
-  "jsdelivr": "dist/arquero.min.js",
-  "types": "dist/types/index.d.ts",
-  "browser": {
-    "./dist/arquero.node.js": "./dist/arquero.min.js",
-    "./src/index-node.js": "./src/index.js"
-  },
+  "main": "src/index-node.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/uwdata/arquero.git"
@@ -55,6 +47,9 @@
   },
   "esm": {
     "force": true,
-    "mainFields": ["module", "main"]
+    "mainFields": [
+      "module",
+      "main"
+    ]
   }
 }

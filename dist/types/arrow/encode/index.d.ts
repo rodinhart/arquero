@@ -22,32 +22,35 @@
  *  column data types.
  * @return {Table} An Apache Arrow Table instance.
  */
-export default function _default(data: any[] | object, options?: ArrowFormatOptions): Table;
+export default function _default(
+  data: any[] | object,
+  options?: ArrowFormatOptions
+): Table
 /**
  * Options for Arrow encoding.
  */
 export type ArrowFormatOptions = {
-    /**
-     * The maximum number of rows to include.
-     */
-    limit?: number;
-    /**
-     * The row offset indicating how many initial
-     * rows to skip.
-     */
-    offset?: number;
-    /**
-     * Ordered list of
-     * column names to include. If function-valued, the function should accept
-     * a dataset as input and return an array of column name strings.
-     */
-    columns?: string[] | ((data: object) => string[]);
-    /**
-     * The Arrow data types to use. If specified,
-     * the input should be an object with column names for keys and Arrow data
-     * types for values. If a column type is not explicitly provided, type
-     * inference will be performed to guess an appropriate type.
-     */
-    types?: object;
-};
-import { Table } from "apache-arrow/Arrow.dom";
+  /**
+   * The maximum number of rows to include.
+   */
+  limit?: number
+  /**
+   * The row offset indicating how many initial
+   * rows to skip.
+   */
+  offset?: number
+  /**
+   * Ordered list of
+   * column names to include. If function-valued, the function should accept
+   * a dataset as input and return an array of column name strings.
+   */
+  columns?: string[] | ((data: object) => string[])
+  /**
+   * The Arrow data types to use. If specified,
+   * the input should be an object with column names for keys and Arrow data
+   * types for values. If a column type is not explicitly provided, type
+   * inference will be performed to guess an appropriate type.
+   */
+  types?: object
+}
+import { Table } from "apache-arrow/Arrow.dom.js"

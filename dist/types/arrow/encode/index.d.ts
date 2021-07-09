@@ -53,4 +53,4 @@ export type ArrowFormatOptions = {
    */
   types?: object
 }
-import { Table } from "apache-arrow/Arrow.dom.js"
+import { Table } from "apache-arrow"

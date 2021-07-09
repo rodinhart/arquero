@@ -8,5 +8,5 @@ export function encode(data: any, idx: any, str: any): number
 export function encodeInto(data: any, idx: any, str: any): number
 export const encoder: TextEncoder
 export function writeUtf8(data: any, idx: any, str: any): number
-import { Data } from "apache-arrow/Arrow.dom.js"
-import { Vector } from "apache-arrow/Arrow.dom.js"
+import { Data } from "apache-arrow"
+import { Vector } from "apache-arrow"
